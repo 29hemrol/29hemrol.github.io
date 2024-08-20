@@ -1,4 +1,9 @@
-﻿img {
+@media (max-width: 768px) {
+h1 {
+font-size: 36px;
+}
+}
+img {
 width: 50px;
 height: 53px;
 }
