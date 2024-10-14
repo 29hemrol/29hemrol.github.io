@@ -7,7 +7,13 @@
                 <a href=The%20Periodic%20Table%20Of%20The%20Elements.html>Home</a>
         </head>
         <body>
-                <h1>Hydrogen</h1>
-                <h3>Atomic Number: 1<br>Symbol: H<br>Atomic Mass: 1.00784</h3>
+                <script>
+        fetch('Hydrogen.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('content').innerText = data;
+            })
+            .catch(error => console.error('404:', error));
+    </script>
         </body>
 </html>
